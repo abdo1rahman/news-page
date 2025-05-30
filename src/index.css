@@ -3,21 +3,23 @@
   --dark-blue: hsl(233, 8%, 79%);
   --light-blue: hsl(210, 100%, 98%);
   --deep-blue: hsl(240, 100%, 5%);
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
 }
 
 @font-face {
   font-family: "regularfont";
-  src: url(../public/assets/fonts/static/Inter-Regular.ttf) format("truetype");
+  src: url(/assets/fonts/static/Inter-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "boldfont";
-  src: url(../public/assets/fonts/static/Inter-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/static/Inter-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "extraboldfont";
-  src: url(../public/assets/fonts/static/Inter-ExtraBold.ttf) format("truetype");
+  src: url(/assets/fonts/static/Inter-ExtraBold.ttf) format("truetype");
 }
 
 body,

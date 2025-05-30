@@ -1,7 +1,17 @@
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
+  margin: 2rem 2rem;
+}
+
+nav img {
+  padding: 0;
+  margin: 0;
+  width: 50px; /* Adjust the size of the logo */
+  height: 30px; /* Maintain aspect ratio */
+  align-self: center;
+  justify-self: flex-start;
 }
 
 nav h1 {

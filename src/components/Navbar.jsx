@@ -2,7 +2,8 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">W.</h1>
+      <img src="/assets/images/logo.svg" alt="logo" className="logo" />
+
       <ul className="nav-links">
         <li>
           <a href="#home">Home</a>
