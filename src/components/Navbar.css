@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: extraboldfont, serif; /* *Using serif as a fallback */
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-family: regularfont, sans-serif;
+  font-weight: normal;
+}
