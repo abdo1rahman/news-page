@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar.jsx";
 import Headline from "./Headline.jsx";
@@ -9,7 +8,7 @@ export default function App() {
     <div className="app">
       <Navbar />
       <div className="content">
-        <Headline imageURL="/assets/images/image-web-3-desktop.jpg" />
+        <Headline />
 
         <div className="articles">
           <h2 className="new">New</h2>

@@ -1,7 +1,7 @@
 :root {
-  --off-white: hsl(36, 100%, 99%);
-  --dark-blue: hsl(233, 8%, 79%);
+  --off-white: hsl(36, 65%, 95%);
   --light-blue: hsl(210, 100%, 98%);
+  --dark-blue: hsl(236, 13%, 42%);
   --deep-blue: hsl(240, 100%, 5%);
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
@@ -28,4 +28,13 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: regularfont, sans-serif;
+}
+
+@media (max-width: 1100px) {
+  body,
+  html {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

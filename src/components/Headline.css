@@ -10,6 +10,7 @@
 }
 
 .headline h1 {
+  width: 100%;
   font-family: extraboldfont, sans-serif;
   font-size: 3rem;
   color: var(--deep-blue);
@@ -25,9 +26,9 @@
 }
 
 .headline-text {
-  color: var(--deep-blue);
-  font-size: 1.2rem;
-  margin-left: 4rem;
+  color: var(--dark-blue);
+  font-size: 1rem;
+  margin-left: 6.2rem;
 }
 
 .btn-read-more {
@@ -40,4 +41,53 @@
   border: none;
   cursor: pointer;
   margin-top: 1rem;
+}
+
+.btn-read-more:hover {
+  background-color: var(--deep-blue);
+  color: var(--off-white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+@media (max-width: 1405px) {
+  .headline h1 {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1322px) {
+  .headline h1 {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
+  .headline-text {
+    font-size: 1rem;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 1006px) {
+  .headline h1 {
+    font-size: 1.7rem;
+  }
+  .headline-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 738px) {
+  .headline-content {
+    flex-direction: column;
+    align-items: left;
+  }
+  .headline h1 {
+    font-size: 4.5rem;
+    margin-right: 0.5rem;
+  }
+  .headline-text {
+    font-size: 2rem;
+    margin-left: 0;
+  }
 }

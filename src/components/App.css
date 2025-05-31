@@ -1,7 +1,7 @@
 .content {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  height: 100vh;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  height: auto;
   width: 100%;
   gap: 1rem;
   /* margin: 2rem; */
@@ -17,6 +17,7 @@
   grid-column: span 1;
   grid-row: span 2;
   width: 90%;
+  height: fit-content;
 }
 
 .articles .new {
@@ -29,9 +30,72 @@
 
 .featured {
   display: flex;
-  align-items: left;
-  padding: 0.5rem;
+  align-items: flex-start;
+  padding: 0;
   color: var(--deep-blue);
-  grid-column: span 3;
-  grid-row: span 1;
+  grid-column: 1 / span 3; /* Explicitly span all columns */
+  grid-row: 3 / span 1; /* Explicitly place in third row */
+  gap: 0.9rem;
+}
+
+.featured-article {
+  flex: 1; /* Each article takes equal space */
+  display: flex;
+  color: var(--deep-blue);
+  gap: 1rem;
+}
+
+.article-image {
+  height: auto;
+  width: 150px;
+  object-fit: cover;
+}
+
+.featured-title {
+  font-size: 1.2rem;
+  font-family: boldfont, sans-serif;
+  color: var(--deep-blue);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.featured-title:hover {
+  color: var(--soft-red);
+  transition: color 0.3s ease-in-out;
+}
+
+.featured-subtitle {
+  font-size: 1rem;
+  font-family: regularfont, sans-serif;
+  color: var(--dark-blue);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1208px) {
+  .featured-title {
+    font-size: 0.9rem;
+  }
+  .featured-subtitle {
+    font-size: 0.8rem;
+  }
+  .article-image {
+    width: 120px;
+  }
+}
+
+@media (max-width: 738px) {
+  .featured {
+    flex-direction: column;
+    align-items: left;
+  }
+  .content > * {
+    width: 100%;
+  }
+  .articles {
+    padding: 0.3rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
 }
