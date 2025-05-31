@@ -22,7 +22,7 @@
 .article-subtitle {
   font-size: 1rem;
   font-family: regularfont, sans-serif;
-  color: var(--light-blue);
+  color: var(--dark-gray);
   margin-bottom: 1rem;
 }
 

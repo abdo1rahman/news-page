@@ -18,9 +18,9 @@ export default function App() {
           />
           <hr
             style={{
-              w: "0.01px",
+              border: "0.001px solid var(--dark-gray)",
               alignSelf: "center",
-              width: "100%",
+              width: "95%",
               margin: "1rem",
             }}
           />
@@ -31,9 +31,9 @@ export default function App() {
           />
           <hr
             style={{
-              w: "0.01px",
+              border: "0.001px solid var(--dark-gray)",
               alignSelf: "center",
-              width: "100%",
+              width: "95%",
               margin: "1rem",
             }}
           />
